@@ -138,6 +138,10 @@ irrigation-need-predictor/
 ├── test.csv
 ├── sample_submission.csv
 └── solution.py
+
+**4. Download dataset from here
+https://www.kaggle.com/datasets/shahzaibalyy/presdicting-irrigiation-need-dataset
+
 **4. Run the pipeline**
 ```bash
 python kagglecode.py
