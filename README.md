@@ -133,3 +133,71 @@ pip install -r requirements.txt
 ```
 
 **3. Place your data files**
+irrigation-need-predictor/
+├── train.csv
+├── test.csv
+├── sample_submission.csv
+└── solution.py
+**4. Run the pipeline**
+```bash
+python solution.py
+```
+
+<div align="center">
+
+![Step 1](https://img.shields.io/badge/Step%201-Clone%20Repo-3670A0?style=for-the-badge&logo=git&logoColor=white)
+![Step 2](https://img.shields.io/badge/Step%202-Install%20Deps-FF6F00?style=for-the-badge&logo=pypi&logoColor=white)
+![Step 3](https://img.shields.io/badge/Step%203-Add%20Data-27AE60?style=for-the-badge&logo=files&logoColor=white)
+![Step 4](https://img.shields.io/badge/Step%204-Run%20Pipeline-9B59B6?style=for-the-badge&logo=python&logoColor=white)
+
+</div>
+
+---
+
+## 📁 Output Files
+
+| File | Description |
+|------|-------------|
+| `submission.csv` | Final Kaggle predictions (270,000 rows) |
+| `plots/confusion_matrices.png` | 2×3 grid — 4 baselines + OOF ensemble |
+| `plots/feature_importance.png` | Top-30 LightGBM feature importances |
+| `plots/model_comparison.png` | All models ranked by CV accuracy |
+
+---
+
+## ⚙️ Requirements
+
+```bash
+pip install pandas numpy scikit-learn lightgbm xgboost catboost matplotlib seaborn
+```
+
+---
+
+## 🌾 About the Dataset
+
+![Train](https://img.shields.io/badge/Train-630%2C000%20rows-27AE60?style=for-the-badge)
+![Test](https://img.shields.io/badge/Test-270%2C000%20rows-3670A0?style=for-the-badge)
+![Features](https://img.shields.io/badge/Features-19-E67E22?style=for-the-badge)
+![Classes](https://img.shields.io/badge/Classes-3-9B59B6?style=for-the-badge)
+
+A large-scale agricultural dataset containing soil properties, environmental
+measurements, crop information and geographic region data. The pipeline
+auto-detects the target column `Irrigation_Need` and classifies each field
+record into one of three categories:
+
+<div align="center">
+
+![High](https://img.shields.io/badge/Class-HIGH%20Irrigation-E74C3C?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Class-MEDIUM%20Irrigation-F39C12?style=for-the-badge)
+![Low](https://img.shields.io/badge/Class-LOW%20Irrigation-27AE60?style=for-the-badge)
+
+</div>
+
+---
+
+## 📄 License
+
+![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=for-the-badge)
+
+Distributed under the **Apache 2.0 License**. See `LICENSE` for more information.
+
