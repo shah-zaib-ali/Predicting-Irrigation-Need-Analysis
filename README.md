@@ -140,7 +140,7 @@ irrigation-need-predictor/
 └── solution.py
 **4. Run the pipeline**
 ```bash
-python solution.py
+python kagglecode.py
 ```
 
 <div align="center">
